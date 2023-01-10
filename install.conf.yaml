@@ -14,6 +14,7 @@
     ~/.zshrc:
       path: zsh/zshrc.zsh
       force: true
+    ~/.aliases.zsh: zsh/aliases.zsh
     ~/.p10k.zsh: zsh/p10k.zsh
     ~/.oh-my-zsh: zsh/oh-my-zsh
     ~/.zsh/zsh-autosuggestions: zsh/zsh-autosuggestions
