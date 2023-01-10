@@ -1,0 +1,22 @@
+- defaults:
+    link:
+      relink: true
+      create: true
+
+- clean: ['~']
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+
+- link:
+    ~/.bashrc: bashrc
+
+    ~/.zshrc:
+      path: zsh/zshrc.zsh
+      force: true
+    ~/.p10k.zsh: zsh/p10k.zsh
+    ~/.oh-my-zsh: zsh/oh-my-zsh
+    ~/.zsh/zsh-autosuggestions: zsh/zsh-autosuggestions
+    ~/.zsh/zsh-syntax-highlighting: zsh/zsh-syntax-highlighting
+    ~/.zsh/powerlevel10k: zsh/powerlevel10k
+
