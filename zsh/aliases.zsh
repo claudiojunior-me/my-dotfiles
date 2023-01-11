@@ -79,3 +79,8 @@ function clone() {
 function touchp() {
     mkdir -p "$(dirname "$1")/" && touch "$1"
 }
+
+# Kill process on the port
+function killport() {
+    sudo kill -9 $(sudo lsof -t -i:"$1")
+}
